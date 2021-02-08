@@ -1,7 +1,6 @@
 package uk.co.mruoc.duration.calculator;
 
 import org.junit.jupiter.api.Test;
-import uk.co.mruoc.duration.calculator.DurationCalculator;
 
 import java.time.Clock;
 import java.time.Duration;

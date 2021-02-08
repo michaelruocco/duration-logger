@@ -2,7 +2,6 @@ package uk.co.mruoc.duration.logger;
 
 import org.junit.jupiter.api.Test;
 import uk.co.mruoc.duration.calculator.DurationCalculator;
-import uk.co.mruoc.duration.logger.MdcDurationLogger;
 
 import java.time.Clock;
 import java.time.Duration;

@@ -29,6 +29,7 @@ ext {
     lombokVersion = "1.18.18"
 
     junitVersion = "5.7.1"
+    systemStubsVersion = "1.2.0"
 }
 
 scmVersion {
@@ -62,10 +63,11 @@ dependencies {
     testImplementation "org.junit.jupiter:junit-jupiter-api:${junitVersion}"
     testImplementation "org.assertj:assertj-core:3.19.0"
     testImplementation "org.apache.commons:commons-collections4:4.4"
+    testImplementation "uk.org.webcompere:system-stubs-core:${systemStubsVersion}"
     testRuntimeOnly "ch.qos.logback:logback-classic:1.2.3"
     testRuntimeOnly "org.junit.jupiter:junit-jupiter-engine:${junitVersion}"
-
-    testFixturesApi "uk.org.webcompere:system-stubs-jupiter:1.2.0"
+    
+    testFixturesImplementation "uk.org.webcompere:system-stubs-core:${systemStubsVersion}"
 }
 
 tasks.withType(Test) {

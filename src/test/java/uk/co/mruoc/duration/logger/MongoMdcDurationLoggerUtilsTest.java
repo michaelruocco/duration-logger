@@ -21,6 +21,7 @@ class MongoMdcDurationLoggerUtilsTest {
 
         Collection<String> lines = captureLogLines(() -> logDuration("my-mongo-write", start));
 
+        assertThat(lines).hasSize(1);
         String lastLine = IterableUtils.get(lines, lines.size() - 1);
         assertThat(lastLine).matches("INFO \\[::my-mongo-write:[0-9]*] my-mongo-write took [0-9]*ms");
     }
